@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'inter', 'roboto';
+    color: #EAE8FF;
+    background-color: #141414;
+}
+
+/* ÍCONES DO PERFIL */
+
+#heart {
+    color: purple;
+}
+
+#location {
+    color: red;
+}
+
+#linkedin {
+    color: blue;
+}
+
+#github {
+    color: black;
+}
+
+
+ul li {
+    list-style: none;
+}
+
+main {
+    width: 95%;
+    margin: 32px;
+}
+
+body a {
+    color: #EAE8FF;
+    text-decoration: none;
+}
+body a:hover{
+  color: #8b5cf6;
+  opacity: 0.7;
+  transition: .3s;
+}
+
+.profile, .projects, .tecnology, .education, .experience  {
+  background-color: rgba(64, 64, 64, .5);
+  background-size: auto;
+  padding: 30px;
+  border-radius: 20px;
+  border-top: 5px solid #6C91C2;
+  margin-bottom: 30px;
+
+  display: block;
+  align-items: center;
+
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+/* SOBRE MIM  */
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.about-me svg {
+    height: 25px;
+    width: 25px;
+}
+
+.about-me li {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 20px;
+    gap: 10px;
+}
+
+/* PERFIL */
+
+.profile p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+.profile div {
+    text-align: center; /* Alinha o conteúdo ao centro horizontalmente */
+    display: flex;
+    flex-direction: column; /* Alinha os utens de forma vertical*/
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.profile img {
+    border-radius: 50%;
+    border: 4px solid #6C91C2; 
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.profile li svg:hover{
+    transform: scale(1.1);
+}
+
+/* MEUS PROJETOS */
+.projects a {
+
+    gap: 10px;
+}
+
+.projects h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.projects p {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;  
+    opacity: 0.7;
+}
+
+.projects ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.projects ul li p {
+    padding-top: 5px;
+    font-size: 15px;
+    opacity: 1;
+}
+
+.projects ul li a {
+    display: block;
+    justify-content: center;
+    gap: 10px;
+}
+
+.projects li a:hover {
+    color: #8b5cf6;
+    transition: .3s;
+    transform: scale(1.1);
+}
+
+.projects img {
+    height: 100px;
+    width: 200px;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+/* TECNOLOGIAS */
+
+.tecnology h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.tecnology  ul {
+
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.tecnology li {
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.tecnology h3 {
+    display: flex;
+    justify-content: center;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+}
+
+.tecnology img {
+    height: 125px;
+    width: 125px;
+}
+
+/* EDUCAÇÃO */
+.education div {
+    font-family:'Times New Roman', Times, serif;
+    margin-top: 20px;     
+}
+
+.education div:nth-child(2){
+    margin-top: 30px;
+}
+
+.education h3{
+    font-size: 20px;
+}
+
+.education h4{
+    padding-top: 5px;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    opacity: .7;
+    
+}
+
+.education p{
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+
+/* EXPERIÊNCIA*/
+.experience {
+    width: 600px;
+}
+
+.experience div {
+    font-family:'Times New Roman', Times, serif;
+    margin-bottom: 30px; 
+}
+
+.experience div h3{
+    font-size: 25px;
+}
+
+.experience h4{
+    padding-top: 5px;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    opacity: .7;
+    
+}
+
+.experience p{
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+
+#container {
+  padding-left: 0px;
+  margin-top: 15px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: top;
+}
+
+/* PERSONALIZAÇÃO DA SCROLLBAR */
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background-color:#2c2c31;
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #9e9ea0;
+    border-radius: 30px;
+}
+
+/* ANIMAÇÃO (usei a mesma do nlw spacetime)*/
+
+/* ANIMAÇÃO "VINDO DA ESQUERDA" */
+
+@keyframes comming-left {
+    from {
+        opacity: 0;
+        transform: translateX(-200px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+}
+
+.profile, .education {
+    animation: comming-left 0.7s ease-in-out forwards; /* A função ease-in-out começa devagar, acelera no meio da animação e diminui novamente no final, proporcionando uma transição suave */
+}
+
+@keyframes comming-right {
+    from {
+        opacity: 0;
+        transform: translateX(200px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+}
+
+.projects, .experience {
+    animation: comming-right 0.7s ease-in-out forwards; /* Forwards serve para manter as novas propriedades no final da animação*/
+}
+
+@keyframes comming-under {
+    from {
+        opacity: 0;
+        transform: translateY(200px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+}
+
+.tecnology {
+    animation: comming-under 0.7s ease-in-out forwards; 
+}
